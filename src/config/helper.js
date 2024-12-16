@@ -1,7 +1,13 @@
 export function timeAgo(date) {
   const now = new Date();
   const past = new Date(date);
-  const secondsAgo = Math.floor((now - past) / 1000);
+
+  // Convert both dates to IST
+  const istOffset = 5.5 * 60 * 60 * 1000; // IST is UTC+5:30
+  const nowIST = new Date(now.getTime() + istOffset);
+  const pastIST = new Date(past.getTime() + istOffset);
+
+  const secondsAgo = Math.floor((nowIST - pastIST) / 1000);
 
   if (secondsAgo < 60) return `${secondsAgo} seconds ago`;
   const minutesAgo = Math.floor(secondsAgo / 60);
