@@ -4,8 +4,8 @@ export function timeAgo(date) {
 
   // Convert both dates to IST
   const istOffset = 5.5 * 60 * 60 * 1000; // IST is UTC+5:30
-  const nowIST = new Date(now.getTime() + 24);
-  const pastIST = new Date(past.getTime() + istOffset);
+  const nowIST = new Date(now.getTime());
+  const pastIST = new Date(past.getTime() + istOffset + 24);
 
   const secondsAgo = Math.floor((nowIST - pastIST) / 1000);
 
