@@ -1,5 +1,5 @@
 import axios from "axios";
-export const baseURL = "https://20.255.48.137";
+export const baseURL = "https://chat-backend.eastasia.cloudapp.azure.com/";
 export const httpClient = axios.create({
   baseURL: baseURL,
 
