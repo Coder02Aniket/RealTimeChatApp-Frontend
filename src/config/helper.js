@@ -16,5 +16,3 @@ const helper =  function helper(date) {
     return `${yearsAgo} years ago`;
 }
 export default helper;
-// Example usage
-console.log(helper("2023-12-01T14:00:00Z"));
