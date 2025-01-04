@@ -222,23 +222,23 @@ const ChatPage = () => {
                     />
 
                     <div className="flex gap-1">
-                            <input
-                                type="file"
-                                name="file"
-                                id="file"
-                                className="hidden"
-                                onChange={(e) => {
+                        <input
+                            type="file"
+                            name="file"
+                            id="file"
+                            className="hidden"
+                            onChange={(e) => {
 
-                                    const file = e.target.files[0];
-                                    console.log(file)
-                                    console.log(e);
-                                    sendAttachment(file).then((response) => {
-                                        console.log(response);
-                                        sendAttach(response);
-                                    });
-                                }}
+                                const file = e.target.files[0];
+                                console.log(file)
+                                console.log(e);
+                                sendAttachment(file).then((response) => {
+                                    console.log(response);
+                                    sendAttach(response);
+                                });
+                            }}
 
-                            />
+                        />
 
 
                         <div className="attachment">
