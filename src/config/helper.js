@@ -1,7 +1,5 @@
 const helper =  function helper(date) {
-    const now = new Date();
-    const past = new Date(date);
-    const secondsAgo = Math.floor((now - past) / 1000);
+
 
   // Convert both dates to IST
   const istOffset = 5.5 * 60 * 60 * 1000; // IST is UTC+5:30
