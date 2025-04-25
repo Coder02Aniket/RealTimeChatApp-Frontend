@@ -241,7 +241,7 @@ const ChatPage = () => {
                         />
 
 
-                        <div className="attachment">
+{/*                         <div className="attachment">
 
                             <button className="dark:bg-purple-600 h-10 w-10  flex   justify-center items-center rounded-full"  onClick={() => {
                                 document.getElementById("file").click();
@@ -249,7 +249,7 @@ const ChatPage = () => {
 
                                 <MdAttachFile size={20}/>
                             </button>
-                        </div>
+                        </div> */}
 
                         <button
                             onClick={sendMessage}
